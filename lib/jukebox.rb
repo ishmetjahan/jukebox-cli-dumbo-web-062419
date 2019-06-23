@@ -24,8 +24,8 @@ puts "Please enter a song name or number:"
 userResp = gets.chomp 
 
 if songs.include?(userResp)
-    puts "Playing #{songs[userResp.to_i - 1]}"
-    elsif songs.include?(userResp)
+    puts "Playing #{userResp}"
+    elsif user_input.to_i.between?(1, song.size)
     puts "Playing #{userResp}"
   else 
     puts "Invalid input, please try again"
