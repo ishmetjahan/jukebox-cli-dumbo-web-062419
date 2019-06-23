@@ -23,7 +23,7 @@ def play(song)
 puts "Please enter a song name or number:"
 userResp = gets.chomp 
 
-if songs.include?(userResp)
+if song.include?(userResp)
     puts "Playing #{userResp}"
     elsif user_input.to_i.between?(1, song.size)
     puts "Playing #{song[userResp-1]}"
