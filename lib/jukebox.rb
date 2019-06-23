@@ -21,9 +21,9 @@ end
 #
 def play(song)
 puts "Please enter a song name or number:"
-userResp = gets.downcase.chomp 
+userResp = gets.chomp 
 
-if (1..9).to_a.include?(userResp.to_i)
+if songs.include?(userResp)
     puts "Playing #{songs[userResp.to_i - 1]}"
     elsif songs.include?(userResp)
     puts "Playing #{userResp}"
