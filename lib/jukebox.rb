@@ -21,7 +21,7 @@ end
 #
 def play(song)
 puts "Please enter a song name or number:"
-userResp = gets.to_s.chomp 
+userResp = gets.chomp 
 
 if song.include?(userResp)
     puts "Playing #{userResp}"
